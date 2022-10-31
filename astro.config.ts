@@ -13,7 +13,7 @@ export default defineConfig({
       wrap: true
     }
   },
-  site: "https://www.twoburnerslee.com",
+  site: "https://twoburnerslee.com",
   integrations: [mdx({}), tailwind({
     config: {
       applyBaseStyles: false
