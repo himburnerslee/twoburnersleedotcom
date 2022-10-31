@@ -1,3 +1,3 @@
 User-agent: *
 Disallow:
-Sitemap: https://www.twoburnerslee.com/sitemap-index.xml
+Sitemap: https://twoburnerslee.com/sitemap-index.xml
