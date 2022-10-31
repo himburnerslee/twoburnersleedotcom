@@ -6,8 +6,8 @@ import { sortMDByDate } from "@/util";
 import type { Post } from "@/types";
 
 const meta = {
-	title: "Astro Cactus",
-	description: "The perfect starter for your perfect blog.",
+	title: "Heart of a Gunslinger",
+	description: "Adventures in PIP-dom.",
 };
 
 const MAX_POSTS = 10;
@@ -19,11 +19,23 @@ const allPostsByDate = sortMDByDate(allPosts).slice(0, MAX_POSTS);
 	<section>
 		<h1 class="mb-6 title">Hello World! TwoBL Here!</h1>
 		<p class="mb-4">
-			Hi, I’m a theme for Astro, an example of how you can use this starter to
-			create a personal blog. If you want to know more about how you can
-			customise me, add more posts, and make it your own, click on one of the
-			social links which will take you to my repo.
+			I wouldn't be a real dev if I didn't have my very own blog that I never
+			updated, would I? This blog is inspired by the #LearnInPublic and
+			#BlackTechTwitter hashtags.
 		</p>
+		<p class="mb-4">
+			I'm a Black Software Developer, not very good, and this is now my latest
+			of many, many attempts to get better. I figure if I make a blog and
+			announce to the world that I'm learning in public, perhaps I'll actually
+			stick with trying to improve.
+		</p>
+		<p class="mb-4">
+			This is a test to see if all this stuff is working. I'll be back later
+			once I think through all this. But I got email #1 from Monica Lent's
+			course "Blogging for Devs" so figured maybe I can at least keep cadence
+			with that and get started today. See ya later. *pew* *pew*
+		</p>
+
 		<SocialList />
 	</section>
 	<section aria-label="Blog post list" class="mt-16">
@@ -31,7 +43,7 @@ const allPostsByDate = sortMDByDate(allPosts).slice(0, MAX_POSTS);
 		<ul class="space-y-4 sm:space-y-2">
 			{
 				allPostsByDate.map((p) => (
-					<li class="flex flex-wrap items-center gap-x-2 [&_q]:w-full">
+					<li class="[&_q]:w-full flex flex-wrap items-center gap-x-2">
 						<BlogPostPreview post={p} as="h2" />
 					</li>
 				))
